@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta http-equiv="Content-Security-Policy" content="default-src * data: blob: ws: wss: gap://ready file://*;style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval';connect-src * ws: wss:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta charset="utf-8"/>
+
+        <link rel="stylesheet" type="text/css" href="library/fontAwesome/css/all.css">
+        <link rel="stylesheet" type="text/css" href="css/app/all.css">
+
+        <title>PonicSoft - Text speech</title>
+
+    </head>    
+    <body>
+
+        <article class="container">
+            <h3>Escuchar texto</h3>
+            <textarea id="myText">Hola, ¿Qué tal?</textarea>
+            <label>
+                <span>Voz</span>
+                <select id="voiceOptions"></select>
+            </label>
+            <label>
+                <span>Volumen</span>
+                <input type="range" id="volumeSlider" min="0" max="1" value="0.5" step="0,1"/>
+            </label>
+            <label>
+                <span>Velocidad</span>
+                <input type="range" id="rateSlider" min="0" max="1" value="0.5" step="0,1"/>
+            </label>
+            <label>
+                <span>Tono</span>
+                <input type="range" id="pitchSlider" min="0" max="2" value="0.5" step="0,1"/>
+            </label>
+            <div class="button">Escuchar</div>
+        </article>
+
+        <script type="text/javascript" src="library/jQuery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/template/index.js"></script>
+
+    </body>
+</html>
